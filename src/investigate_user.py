@@ -48,9 +48,20 @@ def investigate_user(user_id):
     ]
 
     print(
+        "\nNote: Risk level is the model's user-level assessment."
+    )
+
+    print(
+        "Suspicious transactions are based on the dataset's "
+        "'is_suspicious' label."
+    )
+
+    print(
         f"Suspicious transactions: "
         f"{len(suspicious)}"
     )
+
+    
 
     # Connected devices
     devices = sorted(
