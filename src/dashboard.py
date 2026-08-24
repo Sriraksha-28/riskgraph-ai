@@ -258,6 +258,31 @@ if user_transactions.empty:
 
 else:
 
+    show_all = st.checkbox(
+        "Show all transactions",
+        value=False
+    )
+
+    if not show_all:
+
+        display_transactions = user_transactions[
+            user_transactions["is_suspicious"] == 1
+        ].copy()
+
+        st.write(
+            f"Showing suspicious transactions: "
+            f"{len(display_transactions)}"
+        )
+
+    else:
+
+        display_transactions = user_transactions.copy()
+
+        st.write(
+            f"Showing all transactions: "
+            f"{len(display_transactions)}"
+        )
+
     transaction_columns = [
         "transaction_id",
         "device_id",
@@ -268,7 +293,7 @@ else:
         "is_suspicious"
     ]
 
-    display_transactions = user_transactions[
+    display_transactions = display_transactions[
         transaction_columns
     ].copy()
 
@@ -288,7 +313,6 @@ else:
         display_transactions,
         use_container_width=True
     )
-
 
 # --------------------------------------------------
 # Footer
