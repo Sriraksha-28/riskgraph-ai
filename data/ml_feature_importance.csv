@@ -1,0 +1,15 @@
+feature,importance
+max_shared_device_users,0.18889542747965915
+unique_transaction_devices,0.14471296604306527
+unique_device_count,0.14236700869664914
+unique_transaction_merchants,0.14134422092479115
+unique_merchant_count,0.10888170103601423
+max_users_on_device_in_window,0.08980566914064933
+maximum_amount,0.055054138747670345
+total_transactions,0.032668202045050554
+transactions_per_hour,0.027653118880006503
+transaction_count,0.027355904638079315
+unique_locations,0.015710576545354807
+average_amount,0.014127295372344646
+merchant_concentration_ratio,0.011374428090200365
+account_age_days,4.9342360465285655e-05

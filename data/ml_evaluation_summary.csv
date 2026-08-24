@@ -1,0 +1,3 @@
+model,accuracy,precision,recall,f1_score
+Rule-based,0.936,,,
+Random Forest ML,0.999,0.9861111111111112,1.0,0.993006993006993
