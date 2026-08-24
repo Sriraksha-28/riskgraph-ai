@@ -1,0 +1,2 @@
+total_users,total_transactions,normal_transactions,suspicious_transactions,suspicious_transaction_percentage,low_risk_users,medium_risk_users,high_risk_users
+1000,10000,9700,300,3.0,969,24,7
